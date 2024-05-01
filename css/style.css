@@ -1,0 +1,127 @@
+/*===== imports ==============================================================================*/
+@import 'nullstyle.css';
+/*===============================================================================================*/
+
+/*===== main style ==============================================================================*/
+body{
+	background-color: black;
+	color: rgb(196, 140, 21);
+}
+.wrapper {
+	background: url('../img/bg.jpg') 0 0 / contain no-repeat;
+	padding: 720px 50px 50px 50px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+}
+/*===============================================================================================*/
+
+/*===== filter style ==============================================================================*/
+.filter__body{
+	width: 300px;
+	margin: 0px auto 50px auto;
+}
+.filter__body select{
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	padding: 0 15px;
+	font-size: 16px;
+  text-transform: uppercase;
+	color: inherit;
+	cursor: pointer;
+}
+.filter__body select,
+.item-card{
+	border: 1px solid rgb(196, 140, 21);
+	background-color: black;
+}
+/*===============================================================================================*/
+
+/*===== cards style ==============================================================================*/
+.cards__body {
+	margin: 0px auto;
+	width: 70%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+.item-card {
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+}
+.item-card__img {
+	flex: 1 0 auto;
+	width: 200px;
+	height: 100%;
+}
+.item-card__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.cards__content {
+	width: 100%;
+	padding: 20px;
+}
+.cards__content div{
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+.cards__content div:last-child{
+	margin: 20px 0 0 0;
+}
+.cards__content span{
+	text-transform:none;
+	font-weight: normal;
+}
+.item-card__movies {
+	border-top: 1px solid rgb(196, 140, 21);
+	padding-top: 5px;
+}
+.item-card__movies span{
+	display: inline-block;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.item-card__movies li{
+	padding-left: 10px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-align: right;
+}
+.item-card__movies li:last-child{
+	margin: 0;
+}
+/*===============================================================================================*/
+
+/*===== other ==============================================================================*/
+.up__btn{
+	display: none;
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	right: 50px;
+	bottom: 50px;
+	animation: pulse 2s infinite ease-out;
+	cursor: pointer;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+		
+	}
+}
+/*===============================================================================================*/
